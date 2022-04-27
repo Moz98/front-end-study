@@ -1,0 +1,45 @@
+html{
+  font-family: Arial;
+}
+
+h1{
+  color: #111;
+  text-align: center;
+}
+
+h2{
+  font-size: 30px;
+  margin: 0px;
+}
+
+body{
+  color: #fff;
+  margin: 50px;
+}
+
+.box{
+  background: #111;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 4px;
+}
+
+.highlight{
+  color:#febe01;
+  padding: 5px;
+}
+
+p{
+  font-size: 18px;
+  color: #b2b2b2;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #febe01;
+  color: #332200;
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 4px;
+}
