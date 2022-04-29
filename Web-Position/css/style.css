@@ -76,22 +76,15 @@ a {
 
 /* MAIN CONTENT*/
 
-/* .main-layout {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  max-width: 1000px;
-} */
-
 .main-layout {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 0.5fr);
   max-width: 1000px;
   place-content: center;
   position: relative;
 }
 
-.main-layout::before {
+/* .main-layout::before {
   content: "";
   display: inline-block;
   width: 60px;
@@ -101,7 +94,7 @@ a {
   position: absolute;
   left: 51.5%;
   top: 2rem;
-}
+} */
 
 .descricao {
   display: flex;
@@ -134,42 +127,53 @@ a {
 }
 
 
-.Vantagens_Bikecraft {
-  font-size: 45px;
+.Bikecraft_slogan {
+  font-size: 3rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.1);
   text-align: right;
-  padding: 64px;
+  padding-right: 20px;
   align-self: center;
 }
 
-.Vantagens_Bikecraft_topicos:nth-child(2) {
-  background-color: #f7f7f7;
-}
 
 .Vantagens_Bikecraft_topicos {
   background-color: #fff;
   padding: 40px;
 }
 
-.Vantagens_Bikecraft_topicos:nth-child(2) {
-  background-color: #f7f7f7;
-}
-
-.Vantagens_Bikecraft_topicos_conteudo:hover {
-  border-left: 4px solid #900;
-}
 
 .Vantagens_Bikecraft_topicos_conteudo {
   display: grid;
+  padding: 0px;
+  margin: 0px;
+  gap: 20px;
+}
+
+.Vantagens_Bikecraft_topicos_conteudo li:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.topics {
+  display: grid;
   grid-template-columns: auto 1fr;
-  gap: 10px 20px;
-  padding: 20px;
+  align-self: start;
+  padding: 5px;
+  column-gap: 10px;
 }
 
 .Vantagens_Bikecraft_topicos_descricao {
   grid-column: 2;
 }
+
+.topics:hover {
+  border-left: 4px solid red;
+}
+
+/* TESTE */
+
+
+
 
 /* FOOTER */
 
